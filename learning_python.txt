@@ -1,0 +1,7 @@
+In Python you can create variables without declaring their types.
+In Python you can use lists to store collections of items.
+In Python you can loop through data with for and while loops.
+In Python you can write conditional logic with if statements.
+In Python you can store key-value pairs in dictionaries.
+In Python you can define reusable code blocks as functions.
+In Python you can model real-world things with classes and objects.
