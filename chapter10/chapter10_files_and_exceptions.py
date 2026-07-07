@@ -18,7 +18,7 @@ import json
 print("=" * 50)
 print("练习 10.1：Python 学习笔记")
 
-filename = 'learning_python.txt'
+filename = 'chapter10/learning_python.txt'
 
 # 第一次：读取整个文件
 print("--- Reading the entire file ---")
@@ -79,7 +79,7 @@ print("=" * 50)
 print("练习 10.4：访客")
 
 guest_name = input("Please enter your name: ")
-with open('guest.txt', 'w', encoding='utf-8') as file_object:
+with open('chapter10/guest.txt', 'w', encoding='utf-8') as file_object:
     file_object.write(guest_name)
 print(f"Hello, {guest_name}! Your name has been saved to guest.txt.")
 
@@ -91,7 +91,7 @@ print("=" * 50)
 print("练习 10.5：访客簿")
 
 print("Enter 'quit' at any time to stop.")
-with open('guest_book.txt', 'a', encoding='utf-8') as file_object:
+with open('chapter10/guest_book.txt', 'a', encoding='utf-8') as file_object:
     while True:
         name = input("Please enter your name (or 'quit' to exit): ")
         if name.lower() == 'quit':
@@ -163,9 +163,9 @@ def print_file_content(filename, animal_type):
         print(f"Sorry, the file '{filename}' was not found.")
 
 
-print_file_content('cats.txt', 'Cats')
+print_file_content('chapter10/cats.txt', 'Cats')
 print()
-print_file_content('dogs.txt', 'Dogs')
+print_file_content('chapter10/dogs.txt', 'Dogs')
 
 # =============================================================
 # 练习 10.9：静默的猫和狗
@@ -186,9 +186,9 @@ def print_file_content_silently(filename, animal_type):
         pass  # 静默失败
 
 
-print_file_content_silently('cats.txt', 'Cats')
+print_file_content_silently('chapter10/cats.txt', 'Cats')
 print()
-print_file_content_silently('dogs.txt', 'Dogs')
+print_file_content_silently('chapter10/dogs.txt', 'Dogs')
 print()
 # 测试一个不存在的文件
 print("Attempting to read a missing file (should fail silently)...")
@@ -202,7 +202,7 @@ print("(No error message — silent failure works!)")
 print("=" * 50)
 print("练习 10.10：常见单词")
 
-book_filename = 'sherlock_holmes.txt'
+book_filename = 'chapter10/sherlock_holmes.txt'
 
 try:
     with open(book_filename, encoding='utf-8') as file_object:
@@ -234,7 +234,7 @@ else:
 print("=" * 50)
 print("练习 10.11：喜欢的数")
 
-favorite_number_file = 'favorite_number.json'
+favorite_number_file = 'chapter10/favorite_number.json'
 
 
 # --- 程序 1：存储喜欢的数 ---
@@ -274,7 +274,7 @@ if retrieved_number:
 print("=" * 50)
 print("练习 10.12：记住喜欢的数")
 
-favorite_number_file_v2 = 'favorite_number_v2.json'
+favorite_number_file_v2 = 'chapter10/favorite_number_v2.json'
 
 
 def remember_favorite_number():
@@ -310,7 +310,7 @@ remember_favorite_number()
 print("=" * 50)
 print("练习 10.13：用户字典")
 
-user_info_file = 'user_info.json'
+user_info_file = 'chapter10/user_info.json'
 
 
 def store_user_info():
@@ -363,7 +363,7 @@ if retrieved_user:
 print("=" * 50)
 print("练习 10.14：验证用户")
 
-verify_user_file = 'verify_username.json'
+verify_user_file = 'chapter10/verify_username.json'
 
 
 def get_stored_username():
